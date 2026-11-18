@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Household Essentials — Clark Essential Solutions</title>
+<meta name="description" content="Amway Home household essentials. Concentrated cleaners, SA8 laundry, Dish Drops, L.O.C. and Glister toothpaste — from Nathan and Jishawna at Clark Essential Solutions.">
+<meta name="theme-color" content="#06130d">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💎</text></svg>">
+<style>
+:root{
+  --bg:#06130d; --bg2:#0a1f14; --card:#0e2a1b; --card2:#123722;
+  --ink:#f2f7f1; --mut:#b9cfbc; --dim:#8fae96;
+  --em:#10b981; --em2:#34d399; --gold:#f5c542; --gold2:#ffd97a;
+  --navy:#0b2545; --line:rgba(52,211,153,.22);
+  --shadow:0 10px 30px rgba(0,0,0,.45);
+  --r:16px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.45;overflow-x:hidden}
+a{color:inherit}
+img{max-width:100%}
+/* FX11: animated aurora background */
+body::before{content:"";position:fixed;inset:-20%;z-index:-2;background:
+  radial-gradient(42% 32% at 18% 8%,rgba(16,185,129,.20),transparent 60%),
+  radial-gradient(38% 30% at 85% 18%,rgba(245,197,66,.10),transparent 60%),
+  radial-gradient(50% 40% at 50% 95%,rgba(11,37,69,.55),transparent 65%),
+  linear-gradient(180deg,#071a10,#06130d 40%,#050f0a);
+  animation:auroraShift 18s ease-in-out infinite alternate}
+@keyframes auroraShift{from{transform:translate3d(-1.5%,-1%,0) scale(1)}to{transform:translate3d(1.5%,1.2%,0) scale(1.05)}}
+/* FX: scroll progress bar */
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--em),var(--gold));z-index:99;box-shadow:0 0 12px rgba(245,197,66,.7)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 14px}
+/* Header */
+header.top{position:relative;padding:26px 0 8px;text-align:center}
+.logo{display:inline-flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.4px;font-size:1.02rem}
+.logo .gem{font-size:1.5rem;animation:gemFloat 3.2s ease-in-out infinite} /* AN12 float */
+@keyframes gemFloat{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-5px) rotate(4deg)}}
+.logo small{display:block;font-weight:600;color:var(--dim);font-size:.68rem;letter-spacing:2.2px;text-transform:uppercase}
+h1{font-size:clamp(1.7rem,6vw,2.7rem);line-height:1.08;margin:14px auto 8px;max-width:700px;font-weight:950}
+/* FX8: gradient text shimmer */
+.shimmer-text{background:linear-gradient(100deg,var(--em2) 20%,#eafff3 40%,var(--gold) 55%,var(--em2) 75%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:textShimmer 5.5s linear infinite}
+@keyframes textShimmer{to{background-position:-220% 0}}
+.sub{color:var(--mut);max-width:620px;margin:0 auto;font-size:.98rem}
+.byline{margin-top:10px;color:var(--gold2);font-weight:700;font-size:.9rem}
+/* FX7: badge marquee */
+.marquee{overflow:hidden;margin:18px 0 4px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.marquee-track{display:flex;gap:10px;width:max-content;animation:marqueeMove 26s linear infinite} /* AN7 marquee */
+@keyframes marqueeMove{to{transform:translateX(-50%)}}
+.badge{white-space:nowrap;border:1px solid var(--line);background:rgba(16,185,129,.08);color:#d9f5e4;border-radius:999px;padding:6px 13px;font-size:.78rem;font-weight:700}
+/* FX6: sticky nav blur */
+nav.tiers{position:sticky;top:0;z-index:50;margin:14px -14px 0;padding:10px 14px;background:rgba(6,19,13,.78);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.chips{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:0 0 auto;text-decoration:none;font-weight:800;font-size:.85rem;border:1px solid var(--line);border-radius:999px;padding:8px 14px;background:rgba(255,255,255,.03);transition:all .25s ease}
+.chip:hover{border-color:var(--em2);transform:translateY(-1px)}
+.chip.active{border-color:var(--gold);color:#111;background:linear-gradient(135deg,var(--gold),var(--gold2));box-shadow:0 0 16px rgba(245,197,66,.45)} /* FX: chip active glow */
+/* Spotlight */
+.spotlight{position:relative;margin:22px 0 6px;border-radius:22px;padding:2px;background:linear-gradient(120deg,var(--em),var(--gold),var(--em2),var(--gold));background-size:300% 300%;animation:borderFlow 6s ease infinite;box-shadow:var(--shadow)} /* AN3+FX4 animated border glow */
+@keyframes borderFlow{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+.spot-in{background:linear-gradient(160deg,#0d2b1a,#081a10);border-radius:20px;padding:22px 18px;position:relative;overflow:hidden}
+.spot-tag{display:inline-block;background:var(--gold);color:#161006;font-weight:900;font-size:.72rem;letter-spacing:1.4px;padding:5px 11px;border-radius:999px;text-transform:uppercase}
+.spot-in h2{font-size:clamp(1.45rem,5vw,2.1rem);margin:10px 0 4px;line-height:1.12}
+.spot-in .size{color:var(--dim);font-size:.88rem;font-weight:600}
+.price-row{display:flex;align-items:baseline;gap:12px;margin:12px 0 4px;flex-wrap:wrap}
+.price{font-size:2rem;font-weight:950;color:var(--gold2)}
+.peruse{color:var(--em2);font-weight:800;font-size:.9rem}
+.feats{list-style:none;margin:12px 0;display:grid;gap:7px}
+.feats li{padding-left:24px;position:relative;color:#e6f2e8;font-size:.95rem}
+.feats li::before{content:"✔";position:absolute;left:0;color:var(--em2);font-weight:900}
+.note-box{margin-top:14px;border:1px solid rgba(245,197,66,.45);background:rgba(245,197,66,.07);border-radius:14px;padding:13px 14px;font-size:.9rem;color:#f7ecd0}
+.note-box b{color:var(--gold2)}
+.note-box .src{display:block;margin-top:8px;font-size:.72rem;color:var(--dim);line-height:1.5}
+/* Buttons — FX2 shine sweep + FX10 ripple base */
+.btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--em),#0d9464);color:#fff;text-decoration:none;font-weight:900;padding:12px 22px;border-radius:999px;box-shadow:0 8px 20px rgba(16,185,129,.35);transition:transform .2s ease,box-shadow .2s ease;border:0;cursor:pointer;font-size:.95rem}
+.btn:hover{transform:translateY(-2px) scale(1.02);box-shadow:0 12px 26px rgba(16,185,129,.5)}
+.btn::after{content:"";position:absolute;top:0;left:-80%;width:50%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-20deg);transition:left .55s ease}
+.btn:hover::after{left:130%}
+.btn.gold{background:linear-gradient(135deg,var(--gold),#d9a41c);color:#1c1503;box-shadow:0 8px 20px rgba(245,197,66,.35)}
+.ripple{position:absolute;border-radius:50%;background:rgba(255,255,255,.55);transform:scale(0);animation:rippleGo .6s ease-out forwards;pointer-events:none} /* AN10 ripple */
+@keyframes rippleGo{to{transform:scale(4);opacity:0}}
+.spot-cta{margin-top:16px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.guarantee{font-size:.8rem;color:var(--mut)}
+/* FX9: floating bubbles in spotlight */
+.bubbles{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.bubbles i{position:absolute;bottom:-30px;border-radius:50%;border:1.5px solid rgba(52,211,153,.4);background:radial-gradient(circle at 32% 30%,rgba(255,255,255,.35),rgba(52,211,153,.06));animation:bubbleRise linear infinite} /* AN8 bubble rise */
+@keyframes bubbleRise{to{transform:translateY(-460px) translateX(14px);opacity:0}}
+/* Tiers */
+section.tier{padding:26px 0 4px;scroll-margin-top:76px}
+.tier-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:4px}
+.tier-head h2{font-size:1.35rem;font-weight:950}
+.tier-head .band{background:rgba(245,197,66,.14);border:1px solid rgba(245,197,66,.4);color:var(--gold2);font-weight:900;font-size:.78rem;padding:4px 11px;border-radius:999px}
+.tier-head p{width:100%;color:var(--dim);font-size:.88rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(158px,1fr));gap:12px;margin-top:14px}
+@media(min-width:720px){.grid{grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}}
+/* Cards — FX1 hover lift */
+.card{background:linear-gradient(165deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:var(--r);padding:15px 14px;display:flex;flex-direction:column;gap:7px;box-shadow:0 4px 14px rgba(0,0,0,.3);transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease;position:relative;overflow:hidden}
+.card:hover{transform:translateY(-6px);box-shadow:0 16px 30px rgba(0,0,0,.5);border-color:var(--em2)}
+.card .emoji{font-size:1.7rem;line-height:1;animation:iconBob 4s ease-in-out infinite} /* AN11 gentle bob (staggered via inline delay) */
+@keyframes iconBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+.card h3{font-size:.99rem;line-height:1.25;font-weight:850}
+.card .meta{color:var(--dim);font-size:.76rem;font-weight:700;letter-spacing:.2px}
+.card .cprice{font-size:1.28rem;font-weight:950;color:var(--gold2)}
+.card .cprice.see{font-size:.92rem;color:var(--em2)}
+.card ul{list-style:none;display:grid;gap:4px;font-size:.83rem;color:#dcefe0}
+.card ul li{padding-left:16px;position:relative}
+.card ul li::before{content:"•";position:absolute;left:2px;color:var(--em2);font-weight:900}
+.card .notable{margin-top:auto;font-size:.78rem;color:#ffe9a8;background:rgba(245,197,66,.08);border-left:3px solid var(--gold);border-radius:6px;padding:7px 9px}
+.card .btn{margin-top:9px;justify-content:center;padding:10px 14px;font-size:.88rem}
+/* FX3: scroll reveal */
+.reveal{opacity:0;transform:translateY(22px) scale(.98);transition:opacity .6s ease,transform .6s ease} /* AN1 reveal uses this transition */
+.reveal.in{opacity:1;transform:none}
+/* AN2: hero entrance */
+@keyframes heroIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.hero-in{animation:heroIn .8s ease both}
+.hero-in.d1{animation-delay:.12s}.hero-in.d2{animation-delay:.24s}
+/* AN4: pulse on guarantee pill */
+.pulse-pill{display:inline-block;animation:pillPulse 2.6s ease-in-out infinite}
+@keyframes pillPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.045)}}
+/* AN5: sparkle twinkle */
+.sparkle{position:absolute;color:var(--gold2);animation:twinkle 2.2s ease-in-out infinite;font-size:.9rem;pointer-events:none}
+@keyframes twinkle{0%,100%{opacity:.15;transform:scale(.7) rotate(0deg)}50%{opacity:1;transform:scale(1.15) rotate(25deg)}}
+/* AN6: wave drift (footer layers) */
+@keyframes waveDrift{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+/* AN9: foam dots pulse */
+@keyframes foamPulse{0%,100%{transform:scale(1);opacity:.55}50%{transform:scale(1.35);opacity:1}}
+/* Why strip */
+.why{margin:30px 0 4px;position:relative;overflow:hidden;background:linear-gradient(160deg,#0d2b1a,#081a10) padding-box,linear-gradient(120deg,var(--em),var(--gold),var(--em2),var(--gold)) border-box;background-size:auto,300% 300%;border:2px solid transparent;border-radius:20px;padding:20px 18px;animation:borderFlow 6s ease infinite}
+.why>*:not(.bubbles){position:relative;z-index:1}
+.why h2{font-size:1.2rem;margin-bottom:10px}
+.why-grid{display:grid;gap:10px}
+@media(min-width:680px){.why-grid{grid-template-columns:repeat(3,1fr)}}
+.why-item{font-size:.88rem;color:#dcefe0}
+.why-item b{display:block;color:var(--gold2);margin-bottom:3px;font-size:.95rem}
+/* Footer + parallax scene */
+footer{margin-top:36px;border-top:1px solid var(--line);position:relative;overflow:hidden;background:#040b07}
+.foot-in{position:relative;z-index:3;text-align:center;padding:26px 16px 10px}
+.foot-in .brand{font-weight:950;font-size:1.05rem}
+.foot-in p{color:var(--dim);font-size:.82rem;margin-top:6px}
+.foot-in a{color:var(--em2);font-weight:700}
+.stamp{margin-top:10px;font-size:.72rem;color:#6d8a74}
+/* Parallax footer scene — small, layered bubbles/waves/sparkles */
+.para-scene{position:relative;height:92px;overflow:hidden;z-index:1}
+.para-layer{position:absolute;left:0;right:0;bottom:0;will-change:transform}
+.para-waves{height:64px;opacity:.5}
+.para-waves svg{display:block;width:200%;height:64px;animation:waveDrift 11s linear infinite}
+.para-waves.back{opacity:.28;bottom:12px}
+.para-waves.back svg{animation-duration:17s;animation-direction:reverse}
+.para-bub{height:92px}
+.para-bub i{position:absolute;border-radius:50%;border:1.5px solid rgba(52,211,153,.5);background:radial-gradient(circle at 32% 30%,rgba(255,255,255,.4),rgba(52,211,153,.05));animation:foamPulse 3s ease-in-out infinite}
+.para-spark{height:92px}
+.para-spark span{position:absolute;color:var(--gold2);animation:twinkle 2.6s ease-in-out infinite;font-size:.8rem}
+.foot-gem{text-align:center;font-size:1.3rem;padding:2px 0 14px;position:relative;z-index:3}
+::selection{background:var(--em);color:#fff}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+<div class="wrap">
+<header class="top">
+  <div class="logo hero-in"><span class="gem">💎</span><span>Clark Essential Solutions<small>Household Essentials</small></span></div>
+  <h1 class="hero-in d1">A cleaner home, <span class="shimmer-text">top to bottom.</span></h1>
+  <p class="sub hero-in d2">The full Amway Home lineup — concentrated, long-lasting essentials for laundry, dishes and every surface — plus Glister oral care. Every price verified on amway.com.</p>
+  <p class="byline">🏠 From Nathan and Jishawna — your neighbors for a healthier home</p>
+  <div class="marquee" aria-hidden="true"><div class="marquee-track" id="marqueeTrack">
+    <span class="badge">🌿 EPA Safer Choice recognized*</span><span class="badge">💧 BIOQUEST Formula™*</span><span class="badge">♻️ Biodegradable formulas*</span><span class="badge">🧴 Concentrated = less plastic</span><span class="badge">🛡️ 180-Day Satisfaction Guarantee</span><span class="badge">🔬 Dermatologist &amp; allergy tested*</span><span class="badge">🚫 No phosphates or chlorine*</span><span class="badge">🇺🇸 Amway Traceable ingredients</span>
+  </div></div>
+  <p style="font-size:.68rem;color:var(--dim)">*Applies to most Amway Home™ cleaners — see each product card.</p>
+  <nav class="tiers"><div class="chips" id="chips">
+    <a class="chip" href="#tier1">💲 Under $20</a>
+    <a class="chip" href="#tier2">💲💲 $20 – $40</a>
+    <a class="chip" href="#tier3">💲💲💲 $40 &amp; Up</a>
+    <a class="chip" href="#why">💎 Why Us</a>
+  </div></nav>
+</header>
+
+<!-- TIER 1 -->
+<section class="tier" id="tier1">
+  <div class="tier-head"><h2>💲 Everyday Essentials</h2><span class="band">Under $20</span><p>Start here — the hardest-working bottles in the house, all under twenty bucks.</p></div>
+  <div class="grid">
+    <article class="card reveal">
+      <div class="emoji" style="animation-delay:.05s">🥄</div>
+      <h3>Pour and Measure Cap</h3>
+      <p class="meta">Item #AD5113 · 15 mL / 0.5 fl oz cap</p>
+      <p class="cprice" data-countup="5.25">$5.25</p>
+      <ul><li>Precise measuring for SA8™ liquids</li><li>Less waste, right dose every load</li><li>Fits the big laundry bottles</li></ul>
+      <p class="notable">💡 The little cap that makes the 48¢-a-load math real.</p>
+      <a class="btn" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">🛒 Shop</a>
+    </article>
+    <article class="card reveal">
+      <div class="emoji" style="animation-delay:.12s">🔘</div>
+      <h3>1L Dispenser Pump</h3>
+      <p class="meta">Item #103972 · 1 pump</p>
+      <p class="cprice" data-countup="6.50">$6.50</p>
+      <ul><li>Easy pump dispensing for 1 L bottles</li><li>Cleaner dosing, fewer drips</li><li>Reusable bottle after bottle</li></ul>
+      <p class="notable">💡 One pump, years of easy dispensing.</p>
+      <a class="btn" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">🛒 Shop</a>
+    </article>
+    <article class="card reveal">
+      <div class="emoji" style="animation-delay:.18s">💦</div>
+      <h3>Spray Bottle — 500 mL</h3>
+      <p class="meta">Item #116798 · 1 empty bottle</p>
+      <p class="cprice" data-countup="8.25">$8.25</p>
+      <ul><li>The mixing bottle for the concentrates</li><li>Marked for easy dilution</li><li>Refill it again and again</li></ul>
+      <p class="notable">💡 Pair with any 1 L refill above — that's the whole system.</p>
+      <a class="btn" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">🛒 Shop</a>
+    </article>
+    <article class="card reveal">
+      <div class="emoji" style="animation-delay:.1s">🦷</div>
+      <h3>Glister™ Multi-Action Toothpaste</h3>
+      <p class="meta">Item #124106 · 200 g / 7.0 oz</p>
+      <p class="cprice" data-countup="9.00">$9.00</p>
+      <ul><li>REMINACT™ remineralizes enamel*</li><li>Sodium fluoride anticavity + silica polish</li><li>Nutrilite™-certified peppermint · Amway Traceable</li></ul>
+      <p class="notable">⚠️ Up to 198 uses per tube (≈5¢ a brush). Note: independent lab testing reported in 2025 found heavy metals — including arsenic — in a number of popular toothpaste brands; Glister publishes its full ingredient list. <span style="display:block;margin-top:4px;font-size:.92em;opacity:.75">Source: Lead Safe Mama independent lab testing of 51 brands (Apr 2025), reported by The Guardian — lead in ~90%, arsenic in ~65% of brands tested, in parts per billion, none over FDA federal limits. No claim is made that Glister was part of that testing.</span></p>
+      <a class="btn" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">🛒 Shop</a>
+    </article>
+    <article class="card reveal">
+      <div class="emoji" style="animation-delay:.22s">🧴</div>
+      <h3>Dish Drops™ Dispenser Bottle</h3>
+      <p class="meta">Item #107890 · 500 mL / 16.9 fl oz, empty</p>
+      <p class="cprice" data-countup="9.25">$9.25</p>
+      <ul><li>Dilution dispenser for Dish Drops™</li><li>Mix once, wash for weeks</li><li>Right by the sink, ready to go</li></ul>
+      <p class="notable">💡 The sink-side partner to the 1 L Dish Drops bottle.</p>
+      <a class="btn" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">🛒 Shop</a>
+    </article>
+    <article class="card reveal">
+      <div class="emoji" style="animation-delay:.26s">🧽</div>
+      <h3>Scrub Buds™ Scouring Pads</h3>
+      <p class="meta">Item #110490 · Pack of 4 pads</p>
+      <p class="cprice" data-countup="9.75">$9.75</p>
+      <ul><li>Stainless steel scouring power</li><li>Built to outlast ordinary sponges</li><li>For pots, pans, grills &amp; more</li></ul>
+      <p class="notable">💡 About $2.44 a pad — and they go the distance.</p>
+      <a class="btn" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">🛒 Shop</a>
+    </article>
+    <article class="card reveal">
+      <div class="emoji" style="animation-delay:.3s">🧴</div>
+      <h3>L.O.C.™ Multi-Purpose Cleaner</h3>
+      <p class="meta">Item #E0001 · 1 L / 33.8 fl oz</p>
+      <p class="cprice" data-countup="15.00">$15.00</p>
+      <ul><li>Amway's most versatile cleaner — every washable surface</li><li>Gentle enough for hands, tough on grime</li><li>EPA Safer Choice · biodegradable · BIOQUEST™</li></ul>
+      <p class="notable">💡 One bottle refills the spray bottle 20× — about 75¢ a refill.</p>
+      <a class="btn" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">🛒 Shop</a>
+    </article>
+    <article class="card reveal">
+      <div class="emoji" style="animation-delay:.45s">🌬️</div>
+      <h3>Pursue™ Disinfectant Deodorizer Spray</h3>
+      <p class="meta">Item #E0023 · 470 g / 16.6 oz</p>
+      <p class="cprice" data-countup="15.75">$15.75</p>
+      <ul><li>Disinfects and deodorizes in one spray</li><li>Ready to use — no mixing</li><li>For surfaces all around the home</li></ul>
+      <p class="notable">💡 The grab-and-spray partner to Pursue™ concentrate.</p>
+      <a class="btn" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">🛒 Shop</a>
+    </article>
+    <article class="card reveal">
+      <div class="emoji" style="animation-delay:.5s">👕</div>
+      <h3>Fabric Softener — Floral Scent</h3>
+      <p class="meta">Item #110480 · 1 L / up to 50 loads</p>
+      <p class="cprice" data-countup="17.00">$17.00</p>
+      <ul><li>Naturally softens — better than dryer sheets</li><li>Reduces static cling</li><li>Rinses clean even in cold water</li></ul>
+      <p class="notable">💡 Just 34¢ a load for soft, fresh laundry.</p>
+      <a class="btn" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">🛒 Shop</a>
+    </article>
+    <article class="card reveal">
+      <div class="emoji" style="animation-delay:.7s">🍽️</div>
+      <h3>Dish Drops™ Dishwashing Liquid — Original</h3>
+      <p class="meta">Item #110488 · 1 L / 33.8 fl oz</p>
+      <p class="cprice" data-countup="19.00">$19.00</p>
+      <ul><li>One drop cuts serious grease</li><li>Aloe vera + shiso keep hands soft</li><li>EPA Safer Choice · biodegradable</li></ul>
+      <p class="notable">💡 One bottle cleans 330+ sinks of dishes — under 6¢ a sink.</p>
+      <a class="btn" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">🛒 Shop</a>
+    </article>
+  </div>
+</section>
+
+<!-- TIER 2 -->
+<section class="tier" id="tier2">
+  <div class="tier-head"><h2>💲💲 Home Workhorses</h2><span class="band">$20 – $40</span><p>Concentrated refills that replace bottle after bottle of single-use spray.</p></div>
+  <div class="grid">
+    <article class="card reveal">
+      <div class="emoji" style="animation-delay:.15s">🪟</div>
+      <h3>Glass Cleaner — Concentrated Refill</h3>
+      <p class="meta">Item #112537 · 1 L / 33.8 fl oz</p>
+      <p class="cprice" data-countup="20.50">$20.50</p>
+      <ul><li>Ammonia-free, streak-free shine</li><li>No harmful residue left behind</li><li>EPA Safer Choice · biodegradable</li></ul>
+      <p class="notable">💡 Refills the spray bottle 8× — $2.56 a bottle.</p>
+      <a class="btn" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">🛒 Shop</a>
+    </article>
+    <article class="card reveal">
+      <div class="emoji" style="animation-delay:.35s">🍳</div>
+      <h3>Kitchen Cleaner — Concentrated Refill</h3>
+      <p class="meta">Item #112536 · 1 L / 33.8 fl oz</p>
+      <p class="cprice" data-countup="20.50">$20.50</p>
+      <ul><li>Whisks away grease &amp; grime in one shot</li><li>Natural orange oil + washing soda</li><li>No harmful residue on prep surfaces</li></ul>
+      <p class="notable">💡 Refills the spray bottle 8× — $2.56 a bottle.</p>
+      <a class="btn" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">🛒 Shop</a>
+    </article>
+    <article class="card reveal">
+      <div class="emoji" style="animation-delay:.55s">🛁</div>
+      <h3>Bathroom Cleaner — Concentrated Refill</h3>
+      <p class="meta">Item #112546 · 1 L / 33.8 fl oz</p>
+      <p class="cprice" data-countup="20.50">$20.50</p>
+      <ul><li>Dissolves soap scum &amp; hard-water spots</li><li>Cleans without scrubbing</li><li>Safe on acrylic tubs &amp; showers</li></ul>
+      <p class="notable">💡 Refills the spray bottle 8× — $2.56 a bottle.</p>
+      <a class="btn" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">🛒 Shop</a>
+    </article>
+    <article class="card reveal">
+      <div class="emoji" style="animation-delay:.75s">✨</div>
+      <h3>All Fabric Bleach</h3>
+      <p class="meta">Item #124485 · 1 kg / up to 33 loads</p>
+      <p class="cprice" data-countup="21.00">$21.00</p>
+      <ul><li>Chlorine-free oxygen bleach</li><li>Whiter whites, safe on colors</li><li>Works at all wash temperatures, HE-safe</li></ul>
+      <p class="notable">💡 About 64¢ a load — and it deep-cleans your washer monthly.</p>
+      <a class="btn" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">🛒 Shop</a>
+    </article>
+    <article class="card reveal">
+      <div class="emoji" style="animation-delay:.95s">🦠</div>
+      <h3>Pursue™ Disinfectant Cleaner Concentrate</h3>
+      <p class="meta">Item #E3878 · 1 L / 33.8 fl oz</p>
+      <p class="cprice" data-countup="21.75">$21.75</p>
+      <ul><li>Kills 99.9% of 22 types of viruses, fungi &amp; bacteria**</li><li>Cleans + disinfects hard surfaces home-wide</li><li>Concentrated — a little goes far</li></ul>
+      <p class="notable">💡 The one to reach for in cold &amp; flu season. **As listed on amway.com, incl. the COVID-19 virus when used as directed.</p>
+      <a class="btn" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">🛒 Shop</a>
+    </article>
+    <article class="card reveal">
+      <div class="emoji" style="animation-delay:1.15s">🎯</div>
+      <h3>Prewash Spray</h3>
+      <p class="meta">Item #110403 · 350 g / 12 oz</p>
+      <p class="cprice" data-countup="22.25">$22.25</p>
+      <ul><li>One spray tackles the toughest stains</li><li>No scrubbing or soaking needed</li><li>Even lifts stains set by earlier washes</li></ul>
+      <p class="notable">💡 Safe on color-fast fabrics — spray, wash, done.</p>
+      <a class="btn" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">🛒 Shop</a>
+    </article>
+    <article class="card reveal">
+      <div class="emoji" style="animation-delay:1.3s">✈️</div>
+      <h3>Glister™ Travel Size Toothpaste — 6-Pack</h3>
+      <p class="meta">Item #126001 · Six 50 g tubes</p>
+      <p class="cprice" data-countup="24.75">$24.75</p>
+      <ul><li>Same Multi-Action formula as the full-size tube</li><li>Handy 50 g tubes — travel, gym, guests</li><li>REMINACT™ + fluoride in every tube</li></ul>
+      <p class="notable">💡 About $4.13 a tube — stock the guest bath.</p>
+      <a class="btn" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">🛒 Shop</a>
+    </article>
+    <article class="card reveal">
+      <div class="emoji" style="animation-delay:1.45s">🍽️</div>
+      <h3>Automatic Dish Tablets</h3>
+      <p class="meta">Item #109867 · 60 tablets / 0.96 kg</p>
+      <p class="cprice" data-countup="31.25">$31.25</p>
+      <ul><li>Pre-measured — no pouring, no mess</li><li>Made for automatic dishwashers</li><li>60 washes in one box</li></ul>
+      <p class="notable">💡 About 52¢ a wash, perfectly dosed every time.</p>
+      <a class="btn" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">🛒 Shop</a>
+    </article>
+  </div>
+</section>
+
+<!-- TIER 3 -->
+<section class="tier" id="tier3">
+  <div class="tier-head"><h2>💲💲💲 Laundry Powerhouses</h2><span class="band">$40 &amp; Up</span><p>Big bottles, triple-concentrated — months of laundry in a single buy.</p></div>
+  <div class="grid">
+    <article class="card reveal">
+      <div class="emoji" style="animation-delay:.2s">🧺</div>
+      <h3>SA8™ Liquid Laundry Detergent</h3>
+      <p class="meta">Item #110478 · 4 L / up to 133 loads · Bestseller</p>
+      <p class="cprice" data-countup="63.25">$63.25</p>
+      <ul><li>Strongest stain-fighter — triple-concentrated</li><li>Enzymes break up protein &amp; starch stains</li><li>All temps incl. cold · HE-safe · septic-safe</li></ul>
+      <p class="notable">💡 About 48¢ a load — and it leaves no residue in your washer.</p>
+      <a class="btn" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">🛒 Shop</a>
+    </article>
+    <article class="card reveal">
+      <div class="emoji" style="animation-delay:.4s">📦</div>
+      <h3>SA8™ Powder Laundry Detergent</h3>
+      <p class="meta">Item #109849 · 3 kg / up to 99 loads</p>
+      <p class="cprice" data-countup="63.25">$63.25</p>
+      <ul><li>Triple-concentrated powder power</li><li>Brightens whites &amp; colors, guards darks</li><li>Great for towels, sheets &amp; soaking</li></ul>
+      <p class="notable">💡 About 64¢ a load — a favorite since SA8 launched in 1960.</p>
+      <a class="btn" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">🛒 Shop</a>
+    </article>
+  </div>
+  <p style="margin-top:14px;font-size:.8rem;color:var(--dim)">That's the complete current U.S. Amway Home lineup, verified Nov 12, 2026. (L.O.C.™ Wipes are no longer available — the L.O.C. concentrate above is the way to go.) <a href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener" style="color:var(--em2);font-weight:700">Browse the shop →</a></p>
+</section>
+
+<!-- WHY -->
+<div class="why reveal" id="why">
+  <div class="bubbles" id="spotBubbles"></div>
+  <h2>💎 Why shop with Nathan and Jishawna?</h2>
+  <div class="why-grid">
+    <div class="why-item"><b>🤝 Real people, real help</b>We're Nathan and Jishawna — we use these products in our own home and we're happy to help you pick the right ones. Just ask.</div>
+    <div class="why-item"><b>🛡️ 180-day guarantee</b>Amway's satisfaction guarantee means if a product isn't right for your home, you're covered — no hassle.</div>
+    <div class="why-item"><b>🧪 Concentrated value</b>These formulas are built to be diluted and stretched — the per-use math on every card above is the real story.</div>
+  </div>
+  <div style="margin-top:16px;text-align:center"><a class="btn gold" href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">🛒 Visit Our Shop — Clark Essential Solutions</a></div>
+</div>
+</div><!-- /wrap -->
+
+<footer>
+  <div class="foot-in">
+    <p class="brand">💎 Clark Essential Solutions</p>
+    <p>Nathan and Jishawna · Amway Independent Business Owners<br><a href="https://www.amway.com/myshop/n8andshawna" target="_blank" rel="noopener">amway.com/myshop/n8andshawna</a></p>
+    <p class="stamp">Prices checked on amway.com — Nov 12, 2026. Prices can change; the shop shows the current price at checkout.<br>*As compared to a non-fluoride toothpaste (REMINACT™ claim, per Amway). EPA Safer Choice recognition applies to most Amway Home™ cleaners as noted per product on amway.com.</p>
+  </div>
+  <div class="para-scene" id="paraScene" aria-hidden="true">
+    <div class="para-layer para-waves back" data-depth="6"><svg viewBox="0 0 1200 64" preserveAspectRatio="none"><path d="M0,32 C150,58 300,6 450,32 C600,58 750,6 900,32 C1050,58 1150,14 1200,32 L1200,64 L0,64 Z" fill="#0d9464"/></svg></div>
+    <div class="para-layer para-bub" data-depth="16" id="paraBubbles"></div>
+    <div class="para-layer para-waves" data-depth="10"><svg viewBox="0 0 1200 64" preserveAspectRatio="none"><path d="M0,38 C160,12 320,60 480,38 C640,16 800,58 960,38 C1080,24 1150,34 1200,38 L1200,64 L0,64 Z" fill="#10b981"/></svg></div>
+    <div class="para-layer para-spark" data-depth="24" id="paraSparks"></div>
+  </div>
+  <div class="foot-gem">💎</div>
+</footer>
+
+<script>
+// FX5: price count-up (AN: countUp)
+function countUp(el){
+  var target=parseFloat(el.getAttribute('data-countup')); if(isNaN(target))return;
+  var start=null, dur=1100;
+  function step(ts){ if(!start)start=ts; var p=Math.min((ts-start)/dur,1);
+    var eased=1-Math.pow(1-p,3); el.textContent='$'+(target*eased).toFixed(2);
+    if(p<1)requestAnimationFrame(step); else el.textContent='$'+target.toFixed(2); }
+  requestAnimationFrame(step);
+}
+// Scroll reveal + count-up observer
+var io=new IntersectionObserver(function(entries){
+  entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in');
+    en.target.querySelectorAll('[data-countup]').forEach(countUp);
+    if(en.target.hasAttribute('data-countup'))countUp(en.target);
+    io.unobserve(en.target); } });
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+// FX: scroll progress + chip active state + parallax footer
+var chips=[].slice.call(document.querySelectorAll('.chip'));
+var secs=['tier1','tier2','tier3','why'].map(function(id){return document.getElementById(id)});
+var scene=document.getElementById('paraScene');
+var layers=[].slice.call(scene.querySelectorAll('.para-layer'));
+function onScroll(){
+  var h=document.documentElement; var max=h.scrollHeight-h.clientHeight;
+  document.getElementById('progress').style.width=(max>0?(h.scrollTop/max)*100:0)+'%';
+  var cur=0; secs.forEach(function(s,i){ if(s && s.getBoundingClientRect().top<160)cur=i; });
+  chips.forEach(function(c,i){c.classList.toggle('active',i===cur)});
+  // Parallax: layers shift at different depths as footer scrolls into view
+  var r=scene.getBoundingClientRect(); var vh=window.innerHeight;
+  if(r.top<vh && r.bottom>0){ var p=(vh-r.top)/(vh+r.height); // 0→1 progress
+    layers.forEach(function(l){ var d=parseFloat(l.getAttribute('data-depth'))||8;
+      l.style.transform='translateY('+((0.5-p)*d)+'px)'; }); }
+}
+window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+// FX10: button ripple
+document.querySelectorAll('.btn').forEach(function(b){
+  b.addEventListener('click',function(e){ var r=b.getBoundingClientRect();
+    var s=document.createElement('span'); s.className='ripple';
+    var size=Math.max(r.width,r.height); s.style.width=s.style.height=size+'px';
+    s.style.left=(e.clientX-r.left-size/2)+'px'; s.style.top=(e.clientY-r.top-size/2)+'px';
+    b.appendChild(s); setTimeout(function(){s.remove()},650); });
+});
+// FX9: generate spotlight bubbles
+(function(){ var box=document.getElementById('spotBubbles'); if(!box)return;
+  for(var i=0;i<10;i++){ var b=document.createElement('i'); var sz=8+Math.random()*22;
+    b.style.width=sz+'px'; b.style.height=sz+'px'; b.style.left=(Math.random()*96)+'%';
+    b.style.animationDuration=(6+Math.random()*7)+'s'; b.style.animationDelay=(Math.random()*6)+'s';
+    box.appendChild(b); } })();
+// Parallax footer bubbles + sparkles
+(function(){ var bub=document.getElementById('paraBubbles'), spk=document.getElementById('paraSparks');
+  for(var i=0;i<9;i++){ var b=document.createElement('i'); var sz=7+Math.random()*16;
+    b.style.width=sz+'px'; b.style.height=sz+'px'; b.style.left=(4+Math.random()*92)+'%';
+    b.style.bottom=(Math.random()*55)+'px'; b.style.animationDelay=(Math.random()*2.5)+'s';
+    bub.appendChild(b); }
+  for(var j=0;j<7;j++){ var s=document.createElement('span'); s.textContent='✦';
+    s.style.left=(5+Math.random()*90)+'%'; s.style.bottom=(12+Math.random()*62)+'px';
+    s.style.animationDelay=(Math.random()*2)+'s'; spk.appendChild(s); } })();
+// Marquee: duplicate track for seamless loop
+(function(){ var t=document.getElementById('marqueeTrack'); t.innerHTML+=t.innerHTML; })();
+</script>
+</body>
+</html>
